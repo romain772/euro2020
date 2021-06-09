@@ -40,7 +40,6 @@ class Matches extends Component {
                 if (!groups.includes(m.group)) groups.push(m.group);
             });
             this.setState({ matches , teams : teams.sort() , dates , groups , selectedMatches : matches })
-            console.log(matches)
         });
     }
     handlePageChange = (page) => {

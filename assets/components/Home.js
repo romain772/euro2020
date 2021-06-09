@@ -32,8 +32,8 @@ class Home extends Component {
         const {matches} = this.state
         return (
             <section className="headerimg">
-                <ComingMatches data={matches}/>
                 <img src="/images/euro2020-logo.svg"/>                
+                <ComingMatches data={matches}/>
                 <TwitterTimelineEmbed
                     sourceType="profile"
                     screenName="equipedefrance"

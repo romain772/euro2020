@@ -56,8 +56,13 @@ class Form extends Component {
             }
             if ([name][0] === 'email'){
                 const error = Joi.validate(obj,schema).error.details[0].type;
-                if (error === 'string.email'){
-                    errorMessage = 'Veuillez renseigner un e-mail valide';
+                switch (error){
+                    case 'string.email':
+                        errorMessage = 'Veuillez renseigner un e-mail valide';
+                        break;
+                    case 'any.empty':
+                        errorMessage = 'L\'adresse Email doit être renseignée';
+                        break;                
                 }
             }
             if ([name][0] === 'pass'){

@@ -354,6 +354,28 @@ table td{
     .navbar{
         padding:0
     }
+    .headerimg{
+      display: flex;
+      flex-direction: column;
+    }
+    .headerimg img{
+      width: 80%;
+      margin: 0 auto;
+    }
+    .headerimg iframe{
+      display: none !important;
+    }
+    .comingmatches{
+      position: relative;
+      width: 80%;
+      margin: 0 auto;
+    }
+    .signup-form, .newpass-form{
+      width:80%
+    }
+    .signup-form input , .newpass-form input{
+      width:60%
+    }
 }
 @media screen and (max-width:1250px){
   .box{

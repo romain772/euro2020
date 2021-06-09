@@ -21,7 +21,7 @@ class Signup extends Form {
     schema = {
         username : Joi.string().required().max(40),
         password : Joi.string().required().min(8).max(25),
-        email : Joi.string().email()
+        email : Joi.string().required().email()
     }
     doSubmit = () => {
         this.setState({loading:true , buttonText: "Chargement..."})
