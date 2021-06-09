@@ -348,34 +348,45 @@ table td{
 /****************RESPONSIVE**************/
 
 @media screen and (max-width:1024px){
-    .box{
-        width:70%;
-    }
-    .navbar{
-        padding:0
-    }
-    .headerimg{
-      display: flex;
-      flex-direction: column;
-    }
-    .headerimg img{
-      width: 80%;
-      margin: 0 auto;
-    }
-    .headerimg iframe{
-      display: none !important;
-    }
-    .comingmatches{
-      position: relative;
-      width: 80%;
-      margin: 0 auto;
-    }
-    .signup-form, .newpass-form{
-      width:80%
-    }
-    .signup-form input , .newpass-form input{
-      width:60%
-    }
+  .box{
+      width:70%;
+  }
+  .navbar{
+      padding:0
+  }
+  .headerimg{
+    display: flex;
+    flex-direction: column;
+  }
+  .headerimg img{
+    width: 80%;
+    margin: 0 auto;
+  }
+  .headerimg iframe{
+    display: none !important;
+  }
+  .comingmatches{
+    margin-top: 50px !important;
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 2em;
+  }
+  .signup-form, .newpass-form{
+    width:80%
+  }
+  .signup-form input , .newpass-form input{
+    width:60%
+  }
+  .account{
+    font-size: 1.3em;
+  }
+  .signup-form,.newpass-form{
+    font-size: 25px !important;
+  }
+  .matchescontent{
+    font-size:1.8em
+  }
 }
 @media screen and (max-width:1250px){
   .box{
