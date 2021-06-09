@@ -376,6 +376,15 @@ table td{
     .signup-form input , .newpass-form input{
       width:60%
     }
+    .account{
+    font-size: 1.3em;
+  }
+  .signup-form,.newpass-form{
+    font-size: 25px !important;
+  }
+  .matchescontent{
+    font-size:1.8em
+  }
 }
 @media screen and (max-width:1250px){
   .box{
