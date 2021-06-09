@@ -5,9 +5,9 @@ use Symfony\Component\Dotenv\Dotenv;
 use Symfony\Component\ErrorHandler\Debug;
 use Symfony\Component\HttpFoundation\Request;
 
-require '/vendor/autoload.php';
+require 'vendor/autoload.php';
 
-(new Dotenv())->bootEnv('/.env');
+(new Dotenv())->bootEnv('.env');
 
 if ($_SERVER['APP_DEBUG']) {
     umask(0000);
