@@ -40,7 +40,7 @@ class Ranking extends Component {
                     </tbody>
                 </table>} */}
                     <h1 className="title is-1">Classement à venir!!</h1>
-                    <iframe src='https://gfycat.com/ifr/PaleNeglectedCirriped' frameBorder='0' scrolling='no' width='640' height='404'></iframe>
+                    <iframe src='https://gfycat.com/ifr/CheeryVagueElkhound' frameBorder='0' scrolling='no' width='640' height='361'></iframe>
                 </div>                
          );
     }
