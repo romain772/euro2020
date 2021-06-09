@@ -25,24 +25,24 @@ class InstalledVersions
 private static $installed = array (
   'root' => 
   array (
-    'pretty_version' => '1.0.0+no-version-set',
-    'version' => '1.0.0.0',
+    'pretty_version' => 'dev-main',
+    'version' => 'dev-main',
     'aliases' => 
     array (
     ),
-    'reference' => NULL,
+    'reference' => 'ad11e6117fc9daac127ed6a325c493c52cf1baeb',
     'name' => '__root__',
   ),
   'versions' => 
   array (
     '__root__' => 
     array (
-      'pretty_version' => '1.0.0+no-version-set',
-      'version' => '1.0.0.0',
+      'pretty_version' => 'dev-main',
+      'version' => 'dev-main',
       'aliases' => 
       array (
       ),
-      'reference' => NULL,
+      'reference' => 'ad11e6117fc9daac127ed6a325c493c52cf1baeb',
     ),
     'composer/package-versions-deprecated' => 
     array (
@@ -251,6 +251,15 @@ private static $installed = array (
       ),
       'reference' => '1cb1cde8e8dd0f70cc0fe51354a59acad9302084',
     ),
+    'nikic/php-parser' => 
+    array (
+      'pretty_version' => 'v4.10.5',
+      'version' => '4.10.5.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '4432ba399e47c66624bc73c8c0f811e5c109576f',
+    ),
     'ocramius/package-versions' => 
     array (
       'replaced' => 
@@ -419,6 +428,15 @@ private static $installed = array (
       ),
       'reference' => 'e6676acfabf011dca2beaa5f9b8d519c8aea2870',
     ),
+    'symfony/browser-kit' => 
+    array (
+      'pretty_version' => 'v5.2.9',
+      'version' => '5.2.9.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '38e16b426f1a4cd663b2583111f213e0c9d9d4fe',
+    ),
     'symfony/cache' => 
     array (
       'pretty_version' => 'v5.2.9',
@@ -462,6 +480,24 @@ private static $installed = array (
       ),
       'reference' => '864568fdc0208b3eba3638b6000b69d2386e6768',
     ),
+    'symfony/css-selector' => 
+    array (
+      'pretty_version' => 'v5.2.9',
+      'version' => '5.2.9.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '5d5f97809015102116208b976eb2edb44b689560',
+    ),
+    'symfony/debug-bundle' => 
+    array (
+      'pretty_version' => 'v5.2.4',
+      'version' => '5.2.4.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'ec21bd26d24dab02ac40e4bec362b3f4032486e8',
+    ),
     'symfony/dependency-injection' => 
     array (
       'pretty_version' => 'v5.2.9',
@@ -488,6 +524,15 @@ private static $installed = array (
       array (
       ),
       'reference' => '3d7a8138342ea146628a14372d1f1317503c6364',
+    ),
+    'symfony/dom-crawler' => 
+    array (
+      'pretty_version' => 'v5.2.9',
+      'version' => '5.2.9.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8d5201206ded6f37de475b041a11bfaf3ac73d5e',
     ),
     'symfony/dotenv' => 
     array (
@@ -640,12 +685,30 @@ private static $installed = array (
     ),
     'symfony/mailer' => 
     array (
-      'pretty_version' => 'v5.2.7',
-      'version' => '5.2.7.0',
+      'pretty_version' => 'v5.2.10',
+      'version' => '5.2.10.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'c50b304246e56c8574c203bce440f0eafb107ae9',
+      'reference' => '9b4d874082b337759ce7c4ef608ecf63982a4472',
+    ),
+    'symfony/mailgun-mailer' => 
+    array (
+      'pretty_version' => 'v5.2.10',
+      'version' => '5.2.10.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '0664ac2020b8895b1d88871176a79e3f0d4d745f',
+    ),
+    'symfony/maker-bundle' => 
+    array (
+      'pretty_version' => 'v1.31.1',
+      'version' => '1.31.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '4f57a44cef0b4555043160b8bf223fcde8a7a59a',
     ),
     'symfony/mime' => 
     array (
@@ -691,6 +754,15 @@ private static $installed = array (
       array (
       ),
       'reference' => '5d0f633f9bbfcf7ec642a2b5037268e61b0a62ce',
+    ),
+    'symfony/phpunit-bridge' => 
+    array (
+      'pretty_version' => 'v5.2.9',
+      'version' => '5.2.9.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'ea24e42c1ee04792f5d814da6f0814b20ece2907',
     ),
     'symfony/polyfill-ctype' => 
     array (
@@ -996,6 +1068,15 @@ private static $installed = array (
       array (
       ),
       'reference' => '118ef73c177a033955af1342ec54f08dd1bf6d8e',
+    ),
+    'symfony/web-profiler-bundle' => 
+    array (
+      'pretty_version' => 'v5.2.8',
+      'version' => '5.2.8.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '68aea5b0ca1328c2a1ae3df04cce50302a5106f9',
     ),
     'symfony/webpack-encore-bundle' => 
     array (

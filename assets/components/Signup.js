@@ -39,8 +39,9 @@ class Signup extends Form {
         .then((res) => {
             this.setState({loading:false , buttonText : "Valider"})
             if (res.status === 200){
-            toast.success('Votre compte a bien été créé', this.toastoptions);
-            setTimeout(() => { this.props.history.push('/home')},3500)}
+            console.log(res);
+            toast.success(res.data.message, this.toastoptions);
+            setTimeout(() => { this.props.history.push('/login')},3500)}
         })
         .catch((err) => {
             this.setState({loading:false, buttonText : "Valider"})
