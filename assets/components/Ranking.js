@@ -39,8 +39,9 @@ class Ranking extends Component {
                         )}
                     </tbody>
                 </table>} */}
-                <h1 className="title is-1">Classement à venir!!</h1>
-                <iframe src="https://giphy.com/embed/Pk9dRVWl1yIaDKtU3T" width="480" height="270" frameBorder="0" className="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/fifa-Pk9dRVWl1yIaDKtU3T">via GIPHY</a></p>            </div>
+                    <h1 className="title is-1">Classement à venir!!</h1>
+                    <iframe src='https://gfycat.com/ifr/PaleNeglectedCirriped' frameborder='0' scrolling='no' width='640' height='404'></iframe>
+                </div>                
          );
     }
 }
