@@ -3,5 +3,7 @@
   "build/app.js": "/build/app.js",
   "build/runtime.js": "/build/runtime.js",
   "build/vendors-node_modules_axios_index_js-node_modules_core-js_modules_es_array_concat_js-node_modu-62e08b.css": "/build/vendors-node_modules_axios_index_js-node_modules_core-js_modules_es_array_concat_js-node_modu-62e08b.css",
-  "build/vendors-node_modules_axios_index_js-node_modules_core-js_modules_es_array_concat_js-node_modu-62e08b.js": "/build/vendors-node_modules_axios_index_js-node_modules_core-js_modules_es_array_concat_js-node_modu-62e08b.js"
+  "build/vendors-node_modules_axios_index_js-node_modules_core-js_modules_es_array_concat_js-node_modu-62e08b.js": "/build/vendors-node_modules_axios_index_js-node_modules_core-js_modules_es_array_concat_js-node_modu-62e08b.js",
+  "build/vendors-node_modules_axios_index_js-node_modules_core-js_modules_es_array_concat_js-node_modu-665231.css": "/build/vendors-node_modules_axios_index_js-node_modules_core-js_modules_es_array_concat_js-node_modu-665231.css",
+  "build/vendors-node_modules_axios_index_js-node_modules_core-js_modules_es_array_concat_js-node_modu-665231.js": "/build/vendors-node_modules_axios_index_js-node_modules_core-js_modules_es_array_concat_js-node_modu-665231.js"
 }
