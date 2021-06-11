@@ -29,7 +29,7 @@ class SecurityController extends AbstractController
         // last username entered by the user
         $lastUsername = $authenticationUtils->getLastUsername();
         if ($request->isXmlHttpRequest()){
-            return new JsonResponse('a');
+            return new JsonResponse();
         }
         else {
             return $this->redirectToRoute('home');

@@ -49,7 +49,7 @@ class LoginAuthenticator extends AbstractFormLoginAuthenticator implements Passw
         
         $postData = json_decode($request->getContent());
         if ($postData == null){
-            throw new Exception(new JsonResponse(['error' => 'utilisateur non trouvé'])) ;
+            throw new JsonResponse(['error' => 'utilisateur non trouvé']) ;
         }
         $credentials = [
             'username' => $postData->username,
@@ -75,7 +75,7 @@ class LoginAuthenticator extends AbstractFormLoginAuthenticator implements Passw
         $user = $userProvider->loadUserByUsername($credentials['username']);
 
         if (!$user) {
-            throw new UsernameNotFoundException('Username could not be found.');
+            return new JsonResponse(['message' => 'Username could not be found.']);
         }
 
         return $user;
@@ -104,7 +104,7 @@ class LoginAuthenticator extends AbstractFormLoginAuthenticator implements Passw
         //throw new \Exception('TODO: provide a valid redirect inside '.__FILE__);
         //return new RedirectResponse($this->urlGenerator->generate('home'));
         
-        return new JsonResponse('ok');
+        return new JsonResponse(['message' => 'Connection réussie !']);
     }
 
     protected function getLoginUrl()
