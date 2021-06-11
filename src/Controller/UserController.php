@@ -47,11 +47,11 @@ class UserController extends AbstractController
             $email = $postData->email;
             $password = $postData->password;
             $entityManager = $this->getDoctrine()->getManager();
-            // $user->setUsername($username);
-            // $user->setEmail($email);
-            // $user->setPassword($passwordEncoder->encodePassword($user, $password));        
-            // $entityManager->persist($user);
-            // $entityManager->flush();
+            $user->setUsername($username);
+            $user->setEmail($email);
+            $user->setPassword($passwordEncoder->encodePassword($user, $password));        
+            $entityManager->persist($user);
+            $entityManager->flush();
             return new JsonResponse(['message' => 'Votre compte a bien été créé!']);
         }
         else {
