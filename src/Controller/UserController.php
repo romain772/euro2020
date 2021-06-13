@@ -5,6 +5,7 @@ namespace App\Controller;
 use App\Entity\User;
 use App\Form\UserType;
 use App\Repository\UserRepository;
+use App\Repository\BetsRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -31,6 +32,54 @@ class UserController extends AbstractController
             array_push($userarray,$username);
         }        
         return new JsonResponse(['usernames' => $userarray]);
+    }
+
+    /**
+     * @Route("/getUsersandBets", name="userandbets")
+     */
+    public function getUsersAndBets(UserRepository $userRepository , BetsRepository $betsRepository): Response
+    {
+        $users = $userRepository->findAll();
+        $userarray = [];
+        if($users !== null){
+            for ($i = 0 ; $i < count($users) ; $i++){
+                $username = $users[$i]->getUsername();
+                $id = $users[$i]->getId();
+                $user = ['username' => $username , 'user_id' => $id , 'bets' => []];
+                array_push($userarray,$user);
+            }
+        }        
+        $bets = $betsRepository->findAll();
+        $betsarray = [];
+        if($bets !== null){
+            for ($j = 0 ; $j < count($bets) ; $j++){
+                $homescore = $bets[$j]->getHomescore();
+                $awayscore = $bets[$j]->getAwayscore();
+                $bet_id = $bets[$j]->getBetId();
+                $user_id = $bets[$j]->getUserId();
+                $match_id = $bets[$j]->getMatchId();
+                $bet_date = $bets[$j]->getBetDate();
+                $hometeam = $bets[$j]->getHometeam();
+                $awayteam = $bets[$j]->getAwayteam();
+                $match = ['homescore' => $homescore,
+                          'awayscore' => $awayscore,
+                          'bet_id' => $bet_id,
+                          'user_id' => $user_id,
+                          'match_id' => $match_id,
+                          'bet_date' =>$bet_date,
+                          'hometeam' => $hometeam,
+                          'awayteam' => $awayteam];
+                array_push($betsarray,$match);
+            }
+            foreach ($betsarray as $bet) {
+                for($i = 0 ; $i < count($userarray) ; $i++){
+                    if($userarray[$i]["user_id"] === $bet["user_id"]){
+                        array_push($userarray[$i]['bets'],$bet);
+                    }
+                }                
+            }
+        }
+        return new JsonResponse(['users' => $userarray]);
     }
 
     /**

@@ -11,6 +11,7 @@ use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
 
 use App\Repository\UserRepository;
+use App\Repository\BetsRepository;
 
 use App\Entity\Bets;
 use App\Entity\User;
@@ -182,4 +183,13 @@ class HomeController extends AbstractController
             return new JsonResponse(null);
         }
     }
+
+    /**
+     * @Route("api/getallbets", name="getallbets" , methods={"GET"})
+     * @return \Symfony\Component\HttpFoundation\JsonResponse 
+     */
+    public function getAllBets(){
+        return new JsonResponse('a');
+    }
+
 }
