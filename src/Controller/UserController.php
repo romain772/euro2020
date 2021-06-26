@@ -44,8 +44,9 @@ class UserController extends AbstractController
         if($users !== null){
             for ($i = 0 ; $i < count($users) ; $i++){
                 $username = $users[$i]->getUsername();
+                $points = $users[$i]->getPoints();
                 $id = $users[$i]->getId();
-                $user = ['username' => $username , 'user_id' => $id , 'bets' => []];
+                $user = ['username' => $username , 'user_id' => $id , 'bets' => [] , 'points' => $points];
                 array_push($userarray,$user);
             }
         }        
