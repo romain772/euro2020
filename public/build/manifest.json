@@ -3,11 +3,5 @@
   "build/app.js": "/build/app.js",
   "build/runtime.js": "/build/runtime.js",
   "build/vendors-node_modules_axios_index_js-node_modules_core-js_modules_es_array_concat_js-node_modu-9b7ae9.css": "/build/vendors-node_modules_axios_index_js-node_modules_core-js_modules_es_array_concat_js-node_modu-9b7ae9.css",
-  "build/vendors-node_modules_axios_index_js-node_modules_core-js_modules_es_array_concat_js-node_modu-9b7ae9.js": "/build/vendors-node_modules_axios_index_js-node_modules_core-js_modules_es_array_concat_js-node_modu-9b7ae9.js",
-  "build/vendors-node_modules_axios_index_js-node_modules_core-js_modules_es_array_concat_js-node_modu-29ab74.css": "/build/vendors-node_modules_axios_index_js-node_modules_core-js_modules_es_array_concat_js-node_modu-29ab74.css",
-  "build/vendors-node_modules_axios_index_js-node_modules_core-js_modules_es_array_concat_js-node_modu-29ab74.js": "/build/vendors-node_modules_axios_index_js-node_modules_core-js_modules_es_array_concat_js-node_modu-29ab74.js",
-  "build/vendors-node_modules_axios_index_js-node_modules_core-js_modules_es_array_concat_js-node_modu-88a824.css": "/build/vendors-node_modules_axios_index_js-node_modules_core-js_modules_es_array_concat_js-node_modu-88a824.css",
-  "build/vendors-node_modules_axios_index_js-node_modules_core-js_modules_es_array_concat_js-node_modu-88a824.js": "/build/vendors-node_modules_axios_index_js-node_modules_core-js_modules_es_array_concat_js-node_modu-88a824.js",
-  "build/vendors-node_modules_axios_index_js-node_modules_core-js_modules_es_array_concat_js-node_modu-2ff209.css": "/build/vendors-node_modules_axios_index_js-node_modules_core-js_modules_es_array_concat_js-node_modu-2ff209.css",
-  "build/vendors-node_modules_axios_index_js-node_modules_core-js_modules_es_array_concat_js-node_modu-2ff209.js": "/build/vendors-node_modules_axios_index_js-node_modules_core-js_modules_es_array_concat_js-node_modu-2ff209.js"
+  "build/vendors-node_modules_axios_index_js-node_modules_core-js_modules_es_array_concat_js-node_modu-9b7ae9.js": "/build/vendors-node_modules_axios_index_js-node_modules_core-js_modules_es_array_concat_js-node_modu-9b7ae9.js"
 }
